@@ -1,0 +1,16 @@
+
+.DiceContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    flex-direction: column;
+}
+
+.DiceContainer p{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.dice{
+    cursor: pointer;
+}
