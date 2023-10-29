@@ -34,14 +34,22 @@ const GamePlay = () => {
         setSelectedNumber(undefined)
     }
 
+    const resetScore = () => {
+        setScore(0);
+        setError("");
+    }
 
     return (
         <>
             <div className='upperSection'>
                 <TotalScore score={score}></TotalScore>
-                <NumberSelector error={error} setError={setError} selectedNumber={selectedNumber} setSelectedNumber={setSelectedNumber}></NumberSelector>
+                <NumberSelector error={error} setError={setError} selectedNumber={selectedNumber} setSelectedNumber ={setSelectedNumber}></NumberSelector>
             </div>
             <RollDice currentDice={currentDice} roleDice={roleDice}></RollDice>
+            <div className="btns">
+                <button onClick={resetScore}>RESET</button>
+                <button>SHOW RULES</button>
+            </div>
         </>
     )
 }

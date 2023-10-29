@@ -16,7 +16,7 @@ const NumberSelector = ({setError, error, selectedNumber, setSelectedNumber}) =>
             <div className='flex'>
                 {
                     arrNumber.map((value, i) => (
-                        <Box className='box' key={i} onClick={() => numberSelectorHandler(value)} isSelected={value === selectedNumber}> {value} </Box>
+                        <Box key={i} onClick={() => numberSelectorHandler(value)} isSelected={value === selectedNumber}> {value} </Box>
                     ))
                 }
             </div>
