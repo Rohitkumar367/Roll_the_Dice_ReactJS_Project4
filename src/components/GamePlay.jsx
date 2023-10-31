@@ -50,7 +50,7 @@ const GamePlay = () => {
             <RollDice currentDice={currentDice} roleDice={roleDice}></RollDice>
             <div className="btns">
                 <button onClick={resetScore}>RESET</button>
-                <button onClick={() => setShowRules((prev) => !prev)}>{showRules? "HIDE" : "SHOW"} RULES</button>
+                <button onClick={() => setShowRules((prev) => !prev)}> {showRules? "HIDE" : "SHOW"} RULES</button>
             </div>
             {showRules && <Rules></Rules>}  
         </>
